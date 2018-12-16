@@ -7,7 +7,9 @@
     },
     "extends": [
         "airbnb",
-        "plugin:jsx-a11y/recommended"
+        "plugin:jsx-a11y/recommended",
+        "prettier",
+        "prettier/react"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -19,7 +21,8 @@
     "plugins": [
         "react",
         "jest",
-        "jsx-a11y"
+        "jsx-a11y",
+        "prettier"
     ],
     "rules": {
         "react/jsx-filename-extension": [
@@ -32,37 +35,28 @@
             }
         ],
         "react/destructuring-assignment": "off",
-        "indent": [
-            "error",
-            4,
-            {
-                "SwitchCase": 1
-            }
-        ],
-        "react/jsx-indent": [
-            "error",
-            4
-        ],
-        "react/jsx-indent-props": [
-            "error",
-            4
-        ],
-        "quotes": [
-            "error",
-            "single"
-        ],
-        "semi": [
-            "error",
-            "never"
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
         "jest/no-disabled-tests": "warn",
         "jest/no-focused-tests": "error",
         "jest/no-identical-title": "error",
         "jest/prefer-to-have-length": "warn",
-        "jest/valid-expect": "error"
+        "jest/valid-expect": "error",
+        "import/no-unresolved": "off",
+        "no-param-reassign": "off",
+        "import/prefer-default-export": "off",
+        "no-underscore-dangle": [
+            "error",
+            {
+                "allow": [
+                    "__typename",
+                    "__REDUX_DEVTOOLS_EXTENSION_COMPOSE__"
+                ]
+            }
+        ],
+        "prefer-destructuring": "off",
+        "no-plusplus": "off",
+        "import/named": "off",
+        "react/prefer-stateless-function": "off",
+        "default-case": "off",
+        "array-callback-return": "off"
     }
 }
