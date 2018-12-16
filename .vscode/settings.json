@@ -2,5 +2,7 @@
   "eslint.autoFixOnSave": true,
   "editor.formatOnSave": true,
   "eslint.alwaysShowStatus": true,
-  "prettier.eslintIntegration": true
+  "prettier.eslintIntegration": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.preferences.importModuleSpecifier": "non-relative"
 }

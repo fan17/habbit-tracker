@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import './App.css'
+import CalendarIndex from 'Calendar/CalendarIndex'
+import CalendarIndex2 from 'Calendar/CalendarIndex2'
 
 class App extends Component {
     constructor(props) {
@@ -16,7 +17,13 @@ class App extends Component {
     }
 
     static renderInitializedView() {
-        return <div className="App">Home page</div>
+        return (
+            <div>
+                Home page
+                <CalendarIndex />
+                <CalendarIndex2 />
+            </div>
+        )
     }
 
     static renderPlaceholder() {
