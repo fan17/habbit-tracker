@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Absolute import
+
+NODE_PATH has to be not set. .env can set NODE_PATH only if it was not set previously
+
 ## Available Scripts
 
 In the project directory, you can run:
