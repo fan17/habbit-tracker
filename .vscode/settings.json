@@ -4,5 +4,8 @@
   "eslint.alwaysShowStatus": true,
   "prettier.eslintIntegration": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "javascript.preferences.importModuleSpecifier": "non-relative"
+  "javascript.preferences.importModuleSpecifier": "non-relative",
+  "flow.useNPMPackagedFlow": true,
+  "flow.runOnAllFiles": true,
+  "javascript.validate.enable": false
 }

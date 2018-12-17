@@ -1,12 +1,17 @@
 import React, { Component } from 'react'
 import CalendarIndex from 'Calendar/CalendarIndex'
 import CalendarIndex2 from 'Calendar/CalendarIndex2'
+import DateRange from 'DateRange/DateRange'
 
 class App extends Component {
     constructor(props) {
         super(props)
         this.state = {
             initialized: false,
+            dateRange: new DateRange(
+                new Date('2018-12-01'),
+                new Date('2018-12-31')
+            ),
         }
     }
 
@@ -16,12 +21,13 @@ class App extends Component {
         }, 3000)
     }
 
-    static renderInitializedView() {
+    renderInitializedView() {
         return (
             <div>
                 Home page
                 <CalendarIndex />
                 <CalendarIndex2 />
+                {this.state.dateRange.toString()}
             </div>
         )
     }
@@ -32,7 +38,7 @@ class App extends Component {
 
     render() {
         return this.state.initialized
-            ? this.constructor.renderInitializedView()
+            ? this.renderInitializedView()
             : this.constructor.renderPlaceholder()
     }
 }
